@@ -1,76 +1,134 @@
-/* You should edit the content below to fit your website */
-
+/* GENERAL RESET */
 * {
-	font-family: Arial, Verdana, sans-serif;
-	color: #f5eec2;
-	/*text-align: center;*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-h1 {text-align: center;}
+
+/* BODY */
 body {
-	width: 960px;
-	margin: 0 auto;
-	background-color: #39395f}
-#content {
-	overflow: auto;
-	height: 100%;}
-.column1, .column2, .column3 {
-	float: left;
-	margin: 10px;}
- /* Navigation bar container */
+  font-family: Georgia, serif;
+  background-color: #fffaf5; /* soft beige */
+  color: #333;
+  line-height: 1.6;
+  width: 960px;
+  margin: 0 auto;
+}
 
-    nav {
-background-color: #333;
+/* HEADER */
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #e9e3d6; /* warmer beige with more contrast */
+  border-bottom: 2px solid #dcd7c9;
+}
 
-display: flex;
+header h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2.2em;
+  color: #3e6045; /* slightly lighter sage green */
+}
 
-justify-content: center; /* center horizontally */
+/* NAVIGATION BAR */
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
 
-align-items: center;
+nav a {
+  text-decoration: none;
+  color: #f5eec2;
+  font-weight: 500;
+  font-family: 'Courier New', Courier, monospace;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
 
-padding: 10px 0;
+nav a:hover {
+  background-color: #ffb3a7; /* coral hover for vibrancy */
+  color: #1e2f22;
+}
 
-    }
+/* Remove default list style if you keep <ul> tags */
+nav ul,
+nav li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
 
- 
+/* MAIN SECTION */
+section {
+  background: #ffffff;
+  padding: 25px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  max-width: 900px;
+}
 
-    /* Navigation list */
+/* PAGE TITLE */
+section h1 {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  font-size: 1.9em;
+  color: #5a7b5c; /* lighter sage green */
+  margin-bottom: 25px;
+  border-bottom: 3px solid #e86a5f; /* coral accent underline */
+  display: inline-block;
+  padding-bottom: 5px;
+}
 
-    nav ul {
+/* SUBTITLES (e.g., Produce, Protein, etc.) */
+section h2 {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+  font-size: 1.4em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #6d8c6f; /* softer medium sage */
+  border-left: 6px solid #ff9b85; /* coral accent bar */
+  padding-left: 10px;
+}
 
-list-style: none;
+/* PARAGRAPHS + LISTS */
+p, ul, li {
+  font-family: Georgia, serif;
+}
 
-display: flex;
+p {
+  margin-bottom: 15px;
+}
 
-    }
+ul {
+  list-style-type: disc;
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
 
- 
+li {
+  margin-bottom: 5px;
+}
 
-    /* Navigation items */
+/* IMAGES */
+img {
+  display: block;
+  margin: 20px auto; /* centers all images */
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
 
-    nav li {
-
-margin: 0 20px;
-
-    }
-
- 
-
-    /* Links styling */
-
-    nav a {
-
-text-decoration: none;
-color: white;
-font-weight: 500;
-transition: color 0.3s ease;
-
-    }
-
- 
-
-    /* Hover effect */
-
-    nav a:hover {
-color: #ffcc00;
-
-    }
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px 0;
+  font-size: 0.9em;
+  color: #666;
+}
